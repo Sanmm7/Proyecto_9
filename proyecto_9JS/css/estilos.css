@@ -1,0 +1,139 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #8eff7d;
+    --secondary-color: #8eff7d;
+    --tertiary-color: #00bfff;
+}
+
+body {
+    background-color: #87CEEB; /* Azul celeste */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo {
+    font-size: 24px;
+    display: flex;
+    justify-content: start;
+}
+
+.eventos {
+    background-color: #f0eaea; /* Azul celeste */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px 5px rgb(214, 255, 224);
+    padding: 25px;
+    margin: 10px;
+    width: 40%;
+}
+
+.listaEventos2 {
+    background-color: var(--tertiary-color); /* Mismo color que el formulario */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px 5px rgb(235, 235, 235);
+    padding: 20px;
+    margin: 50px;
+    width: 90%; /* Aumenta el ancho al 90% */
+    margin-top: 20px; /* Agrega margen superior */
+}
+
+
+#nombreEvento,
+#fechaEvento {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    background-color:white ; /* Fondo transparente */
+    width: 90%;
+    background-clip: padding-box; /* Evita que el margen se haga transparente */
+    margin-left: 10px; /* Agrega margen izquierdo */
+    margin-right: 15px; /* Agrega margen derecho */
+    box-shadow: #00bfff;
+    
+}
+
+#agregar {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--tertiary-color); /* Azul celeste */
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.evento {
+    background-color: var(--secondary-color); /* Cambiar al color secundario o el que desees */
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 2px 5px rgb(229, 231, 230);
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px; /* Margen azul inferior */
+}
+
+
+.eliminar {
+    background-color: green; /* Verde */
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.eliminar:hover {
+    background-color: red; /* Rojo al pasar por encima */
+}
+
+.dias {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.diasFaltantes {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.texto {
+    font-size: 30px;
+    text-align: center;
+}
+
+.nombreEvento, .fechaEvento {
+    text-align: center;
+    width: 70%;
+}
